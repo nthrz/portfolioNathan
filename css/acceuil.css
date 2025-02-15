@@ -10,18 +10,16 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     padding: 10px 0;
     text-align: center;
-    z-index: 1000; /* S'assurer que le header est au-dessus de la vidéo */
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    position: relative; /* Garantit que les liens sont interactifs */
-    z-index: 1001; /* Toujours au-dessus de la vidéo */
 }
 
 nav ul li {
@@ -35,8 +33,11 @@ nav ul li a {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
-    position: relative;
-    z-index: 1002; /* Assure que les liens restent cliquables */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
 }
 
 
@@ -81,3 +82,5 @@ footer a {
     color: #FFD700;
     text-decoration: none;
 }
+
+

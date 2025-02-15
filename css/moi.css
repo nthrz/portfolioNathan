@@ -102,7 +102,9 @@ footer {
     background: #222;
     color: white;
     margin-top: 50px;
+    font-size: 1rem;  /* Ajout de la taille normale pour harmoniser */
 }
+
 
 footer a {
     color: #FFD700;

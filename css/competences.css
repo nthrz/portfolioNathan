@@ -1,0 +1,135 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #000;
+    scroll-behavior: smooth;
+}
+
+/* Barre de Navigation */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Sections */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Compétences */
+.skills-category {
+    margin-bottom: 50px;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px; /* Limite la largeur pour éviter une dispersion excessive */
+    margin: 0 auto; /* Centre le conteneur */
+}
+
+.skill-card {
+    background: #f8f8f8;
+    width: 280px; /* Taille originale plus grande */
+    height: 200px; /* Taille originale plus grande */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-title {
+    font-size: 18px;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.skill-logo {
+    width: 60px;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.description {
+    opacity: 0;
+    font-size: 14px;
+    max-width: 80%;
+    position: absolute;
+    text-align: center;
+    transition: opacity 0.3s;
+}
+
+.skill-card:hover .skill-logo,
+.skill-card:hover .skill-title {
+    opacity: 0;
+}
+
+.skill-card:hover .description {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+
+}
+footer a {
+
+text-decoration: none;
+
+}
