@@ -1,4 +1,4 @@
-/* Reset */
+    /* Reset */
 body, html {
     margin: 0;
     padding: 0;
@@ -129,7 +129,7 @@ footer {
 
 }
 footer a {
-
+color: #FFD700;
 text-decoration: none;
 
 }
